@@ -71,7 +71,7 @@ p = figure(
 
     plot_width = 1500,
     plot_height = 600,
-    title = 'Potenza dei singoli dispositivi',
+    title = 'Potenza Totale',
     x_axis_label = 'Data',
     y_axis_label = 'Potenza(kW)',
     x_axis_type = 'datetime'
