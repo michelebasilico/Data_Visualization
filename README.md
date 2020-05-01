@@ -1,4 +1,4 @@
-# Tesi
+# ESN
 SingPotFigure: Crea su un'unica pagina più figure con le singole potenze Consumate e Prodotte. I file.csv devono essere all'interno di una cartella 'Energie'.I file.csv dei produttori devono contenere nel loro nome la parola chiave 'prod', verranno graficati in verde. Per i file.csv dei consumatori non è richiesto ma è consigliato che al loro interno contengano la parola chiave 'cons'. I file.csv dei prosumer vengono trattati a parte con un grafico di diverso colore e una label particolare, anche in tal caso è richiesto che il nome del file contenga la parola chiave 'prosumer'. 
 
 Pot_totale: Viene mostrato su un unico grafico la somma di tutta la potenza consumata e la somma di tutta la potenza generata.
