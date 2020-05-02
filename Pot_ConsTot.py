@@ -23,7 +23,7 @@ p = figure(
 
     plot_width = 1500,
     plot_height = 600,
-    title = 'Potenza Consumata Totale',
+    title = 'Potenza Consumata per ogni dispostivo(kW)',
     x_axis_label = 'Data',
     y_axis_label = 'Potenza(kW)',
     x_axis_type = 'datetime'
@@ -80,7 +80,7 @@ for i,color in zip(range(n_File),colors):
         line_width=4,
         color = color,
         alpha = 0.8,
-        legend_label = 'Potenza Totale Consumata(kW)'
+        legend_label = 'Potenza Consumata(kW) da' + nameFile[i][:-4]
 
     )
 
