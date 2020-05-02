@@ -6,6 +6,6 @@ E' richiesto che i file.csv dei produttori siano all'interno di una cartella 'Pr
 
 autoConsumo: viene mostrato un grafico ad aree con l'autoconsumo(potenza generata-consumata). E' richiesto che i file.csv dei produttori siano all'interno di una cartella 'Produttori', mentre i file.csv dei Consumatori all'interno di una cartella 'Consumatori'. 
 
-Pot_ConsTot: viene mostrata la potenza consumata da ogni dispositivo Consumatore. E' richiesto che tutti i file.csv si trovino all'interno di una cartella 'Consumatori'. 
+Pot_ConsTot: vengono mostrate le singole potenze consumate da ogni dispositivo Consumatore. E' richiesto che tutti i file.csv si trovino all'interno di una cartella 'Consumatori'. Il nome del file viene mostrato nella legenda
 
 power: Libreria contente i moduli per la conversione Unix->Datatime e Energia->Potenza
