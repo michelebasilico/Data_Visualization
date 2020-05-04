@@ -6,7 +6,7 @@ AreaChart: Viene generato un grafico ad aree che mostra Autoconsumo,Potenza Prod
 Pot_totale: Viene mostrato su un unico grafico la somma di tutta la potenza consumata e la somma di tutta la potenza generata.
 E' richiesto che i file.csv dei produttori siano all'interno di una cartella 'Produttori', mentre i file.csv dei Consumatori all'interno di una cartella 'Consumatori'. Le potenze Consumate saranno graficate in rosso, quelle Generate in verde.
 
-autoConsumo: viene mostrato un grafico ad aree con l'autoconsumo(potenza generata-consumata). E' richiesto che i file.csv dei produttori siano all'interno di una cartella 'Produttori', mentre i file.csv dei Consumatori all'interno di una cartella 'Consumatori'. 
+Area_Autoconsumo.py : Permette la visualizzazione di un grafico ad area con potenza generata, consumata e autoconsumo. Richiede i file.csv produttori al path "Dati/Consumatori" e i file.csv consumatori al path "Dati/Produttori". 
 
 Pot_ConsTot: vengono mostrate le singole potenze consumate da ogni dispositivo Consumatore. E' richiesto che tutti i file.csv si trovino all'interno di una cartella 'Consumatori'. Il nome del file viene mostrato nella legenda
 
