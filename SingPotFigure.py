@@ -15,6 +15,7 @@ df_file = [ pandas.read_csv(f,sep = ' ') for f in csv_file ]
 #Registro il nome del file per le verifiche successive
 nameFile = os.listdir('Energie')
 
+
 #Genero un file di output 
 output_file('index5.html')
 
@@ -24,6 +25,11 @@ fig = []
 for i in range(n_csv):
     time = []
     energy = []
+
+    if(df_file[i]['date'][0] == 0):
+        df_file[i]['date'] = df_file[i]['date'] + 1449878400
+    if(df_file[i]['date'][0] == 1475877600):
+        df_file[i]['date'] = df_file[i]['date'] - 25999200
     #Genero la lista tempo del Dispositivo Consumatore
     time = pw.Unix_to_hours(df_file[i])
     #Genero la lista energia del Dispositivo Consumatore
@@ -76,23 +82,6 @@ for i in range(n_csv):
 
         )
     elif('prosumer' in nameFile[i]):
-        
-
-        #df1 = pandas.DataFrame(data=data)
-        #df2 = pandas.DataFrame(columns=df1.columns)
-        #print(df1)
-        #cond = df1['y_values'] < 0
-        #rows = df1.loc[cond, :]
-        #df2 = df2.append(rows, ignore_index=True)
-        #df1.drop(rows.index, inplace=True)
-        
-
-        #data1 = {'x_values': df1['x_values'], 'y_values': df1['y_values']}
-        #source1 = ColumnDataSource(data=data1)
-
-        #data2 = {'x_values': df2['x_values'], 'y_values': df2['y_values']}
-        #source2 = ColumnDataSource(data=data2)
-
 
         fig[i].line(
 
@@ -105,17 +94,7 @@ for i in range(n_csv):
             alpha = 0.9
 
         )
-        #fig[i].line(
-
-            #x = 'x_values',
-            #y = 'y_values',
-            #source = source2,
-            #legend_label = 'Potenza Consumata(kW)',
-            #line_width=4,
-            #color = 'red',
-            #alpha = 0.8
-
-        #)
+       
     else:
         #Se si tratta di un consumatore uso il colore rosso
         fig[i].line(
