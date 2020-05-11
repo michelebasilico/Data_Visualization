@@ -1,6 +1,6 @@
 # Data Visualization
 
-microGrid2.py: Permette la visualizzazione dei seguenti grafici:
+dataVisualization.py: Permette la visualizzazione dei seguenti grafici:
 1.  Timeseries(energia) dei device delle singole abitazioni
 2.  Timeseries(potenza) dei device delle singole abitazioni
 3.  Somma potenze consumate da tutti i device dello stesso tipo per ogni abitazione;
