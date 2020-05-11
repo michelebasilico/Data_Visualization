@@ -14,6 +14,7 @@ Permette la visualizzazione dei seguenti grafici:
 10. Somma di potenze prodotte e consumate per l'intero vicinato;
 11. Torta Autoconsumo(energetico) ed energia rilasciata nella rete per ogni abitazione;
 12. Torta Energia Prodotta ed Energia Consumata per ogni abitazione;
+
 Lo script effettua la ricerca della cartella output all'interno della cartella di simulazione. In essa va poi a ricercare tutte le cartelle presenti. Ad ogni cartella è associato un dispositivo, il cui nome viene determinato dal nome della cartella stessa. All'interno di ogni cartella saranno presenti le timeserie dei device delle home dell'abtazione. L'id della home deve essere il primo carattere del nome del file. Questo verrà utilizzato per contraddistinguere le diverse home ed effettuare i calcoli per le singole home.
 
 
